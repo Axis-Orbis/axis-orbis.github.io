@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+        <title>Space Battle Game</title>
+        <link rel="stylesheet" href="styles2.css">
+       
+    
+    </head>
+    <body>
+        <div class="tab">
+                <a href="../index.html" > <button class="tablinks" onclick= "openPage(event, 'site2')">
+                        Home Page</button></a>
+            <a href="index2.html" > <button class="tablinks" onclick= "openPage(event, 'site1')">
+            space battle game</button>   </a>
+           <a href="index3.html" > <button class="tablinks" onclick= "openPage(event, 'site2')">
+            Music Visualiser</button></a>
+        
+           </div>
+        <p class="gametext"> score: <span id = "score"></span><br>
+            WASD to move your ship, and SPACE to shoot.<br>
+            You have to use your ammo sparingly, so you can only shoot one projectile at a time.
+            <br>Defend Earth against the aliens for as long as you can!<br>
+            <button id="btn">Start Game!</button>
+        </p>
+        
+        <canvas id = "myCanvas"></canvas>
+       
+    
+        <img id = "enemyOne" src="images/enemy1.png">
+        <img id= "projectile" src="images/normal projectile up.png">
+        <img id = "backgroundImg" src="images/earth.png">
+        <img id = "playerImg" src = "images/thing.png">
+        <!-- load javascript -->
+        <script src="main2.js"></script>
+        <script src="main.js"></script>
+</body>
+</html>

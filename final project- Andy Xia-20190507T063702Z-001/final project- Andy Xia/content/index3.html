@@ -1,0 +1,80 @@
+<!-- Modified Wes Bos JS30 Challenge -->
+<!DOCTYPE html>
+
+<head>
+  <title>audio visualiser</title>
+  <link rel="stylesheet" href="style3.css">
+  
+</head>
+
+<body>
+    <div class="tab">
+        <a href="../index.html" > <button class="tablinks" onclick= "openPage(event, 'site2')">
+            Home Page</button></a>
+        <a href="index2.html" > <button class="tablinks" onclick= "openPage(event, 'site1')">
+        space battle game</button>   </a>
+       <a href="index3.html" > <button class="tablinks" onclick= "openPage(event, 'site2')">
+        Music Visualiser</button></a>
+
+       </div>
+    <p class="text"> Insert color or hex value <input id="color"><button id= "btn">color</button>    </p>
+  <canvas id="myCanvas1"></canvas>
+
+  <div class="keybox">
+  <div class="keys" id="keys">
+    <div id="A" class="key">
+      <p>A</p>
+      <p class="sound">do</p>
+    </div>
+    <div id="S" class="key">
+      <p>S</p>
+      <p class="sound">re</p>
+    </div>
+    <div id="D" class="key">
+      <p>D</p>
+      <p class="sound">mi</p>
+    </div>
+    <div id="F" class="key">
+      <p>F</p>
+      <p class="sound">fa</p>
+    </div>
+    <div id="V" class="key">
+      <p>V</p>
+      <p class="sound">so</p>
+    </div>
+ 
+      <div id="H" class="key">
+          <p>H</p>
+          <p class="sound">clap</p>
+        </div>
+        <div id="J" class="key">
+          <p>J</p>
+          <p class="sound">snare</p>
+        </div>
+        <div id="K" class="key">
+          <p>K</p>
+          <p class="sound">tom</p>
+        </div>
+        <div id="L" class="key">
+          <p>L</p>
+          <p class="sound">tink</p>
+        </div>
+        
+  </div>
+</div>
+  <audio id="do" src="sounds/1do-stretched.wav"></audio>
+  <audio id="re" src="sounds/2re-stretched.wav"></audio>
+  <audio id="mi" src="sounds/3mi-stretched.wav"></audio>
+  <audio id="fa" src="sounds/4fa-stretched.wav"></audio>
+  <audio id="so" src="sounds/5sol-stretched.wav"></audio>
+  <audio id="clap" src="sounds/clap.wav"></audio>
+  <audio id="kick" src="sounds/kick.wav"></audio>
+  <audio id="boom" src="sounds/boom.wav"></audio>
+  <audio id="tink" src="sounds/tink.wav"></audio>
+  <img id = "backgroundImg" src="images/1pixilated.jpg">
+  <!-- Load JavaScript -->
+  <script src="main3.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
